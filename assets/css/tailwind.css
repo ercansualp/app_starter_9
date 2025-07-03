@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #3B82F6; /* blue-500 */
+  --color-background: #F8FAFC; /* slate-50 */
+  --color-sidebar: #FFFFFF;
+  --color-card: #FFFFFF;
+  --color-text-primary: #1E293B; /* slate-900 */
+  --color-text-secondary: #64748B; /* slate-600 */
+  --color-border-color: #E2E8F0; /* slate-200 */
+  --color-input-bg: #FFFFFF;
+  --color-hover-light: #EBF5FF; /* A very light blue, like blue-50 */
+  --color-selected-row-bg: #E0F2FE; /* Light blue for selected row, like blue-100 */
+  --color-nav-active-bg: #DBEAFE; /* Light blue for active navigation in light mode */
+  --color-nav-hover-bg: #F1F5F9; /* Light gray for navigation hover in light mode */
+  --color-project-active-bg: #DBEAFE; /* Light blue for active project in light mode */
+  --color-project-hover-bg: #F1F5F9; /* Light gray for project hover in light mode */
+}
+
+.dark {
+  --color-primary: #3B82F6; /* blue-500 */
+  --color-background: #111827; /* gray-900 */
+  --color-sidebar: #1F2937; /* gray-800 */
+  --color-card: #1F2937; /* gray-800 */
+  --color-text-primary: #F9FAFB; /* gray-50 */
+  --color-text-secondary: #9CA3AF; /* gray-400 */
+  --color-border-color: #4B5563; /* gray-600 */
+  --color-input-bg: #374151; /* gray-700 */
+  --color-hover-dark: #2D3748; /* A slightly darker gray for dark mode hover, like gray-800 or gray-700 */
+  --color-selected-row-bg: #1E3A8A; /* Darker blue for selected row in dark mode, like blue-900 */
+  --color-nav-active-bg: #1E3A8A; /* Dark blue for active navigation in dark mode */
+  --color-nav-hover-bg: #374151; /* Dark gray for navigation hover in dark mode */
+  --color-project-active-bg: #1E3A8A; /* Dark blue for active project in dark mode */
+  --color-project-hover-bg: #374151; /* Dark gray for project hover in dark mode */
+}
+
+body {
+  @apply bg-background text-text-primary;
+  transition: background-color 0.3s, color 0.3s;
+}
